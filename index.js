@@ -4,15 +4,17 @@ function BoardMember(name, homeState, training){
   this.training = training;
 };
 
-  BoardMember.prototype.veto = function(){
-    return 'No, I must disagree'
-  }
-  BoardMember.prototype.approve = function(){
-    return 'You can do that!'
-  }
-//   this.doCharity = function(){
-//     return "I like to help people."
-//   }
+BoardMember.prototype.veto = function(){
+  return 'No, I must disagree'
+};
+
+BoardMember.prototype.approve = function(){
+  return 'You can do that!'
+};
+
+BoardMember.doCharity = function(){
+  return "I like to help people."
+}
 //
 //   this.releasePressStatement = function(){
 //     return "You will see great things from Scuber."
